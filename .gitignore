@@ -1,0 +1,25 @@
+# Hugo build files
+public/
+resources/
+
+# Site directories
+ai-independence/
+ai-sovereignty/
+open-source-apocalypse/
+radiant-home-solutions/
+the-independent-home/
+winkky-farms/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Hugo cache
+.hugo_build.lock
