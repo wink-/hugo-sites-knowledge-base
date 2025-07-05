@@ -1,14 +1,6 @@
-# Hugo build files
+# Hugo build files (generated in each submodule)
 public/
 resources/
-
-# Site directories
-ai-independence/
-ai-sovereignty/
-open-source-apocalypse/
-radiant-home-solutions/
-the-independent-home/
-winkky-farms/
 
 # OS files
 .DS_Store
@@ -23,3 +15,6 @@ Thumbs.db
 
 # Hugo cache
 .hugo_build.lock
+
+# Note: Site directories are managed as git submodules
+# No need to ignore them - git handles submodules automatically
