@@ -141,7 +141,8 @@
       "Bash(mysql:*--execute=USE*)",
       "Bash(mysqldump:*--no-data*)",
       "Bash(mysqldump:*--single-transaction*)",
-      "Bash(mysqlshow:*)"
+      "Bash(mysqlshow:*)",
+      "Bash(touch:*)"
     ],
     "deny": []
   }
