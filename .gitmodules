@@ -27,3 +27,8 @@
 	path = radiant-home-solutions
 	url = https://github.com/wink-/radiant-home-solutions
 	branch = master
+
+[submodule "radiant-gardens"]
+	path = radiant-gardens
+	url = https://github.com/wink-/radiant-gardens.git
+	branch = main
