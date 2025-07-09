@@ -1,7 +1,7 @@
 # SITES.md - Complete Site Portfolio
 
 ## Overview
-This repository manages six interconnected websites targeting $475K annual revenue through content marketing, affiliate programs, digital products, and consulting services. All sites are built with Hugo static site generator and deployed on Cloudflare Pages.
+This repository manages seven interconnected websites serving as a centralized knowledge base for research, content planning, and site management. Sites include Hugo static sites and static HTML/CSS/JS sites, targeting $12K annual revenue through content marketing, affiliate programs, digital products, and consulting services. All sites are deployed on Cloudflare Pages.
 
 ---
 
@@ -14,7 +14,7 @@ This repository manages six interconnected websites targeting $475K annual reven
 - **Voice**: Rebellious but practical, anti-system but solution-focused
 - **Technology**: Hugo static site generator with Ananke theme (clean/accessible design)
 - **Deployment**: Cloudflare Pages (global CDN, automatic SSL, unlimited bandwidth)
-- **Revenue Target**: $200K+ Year 1
+- **Revenue Target**: $5.5K+ Year 1
 - **Content Schedule**: 3 posts/week (Monday: Energy/Technical, Wednesday: Financial/Economic, Friday: Food/Practical)
 - **Monetization**:
   - High-value affiliate programs (solar generators, water filters, tools)
@@ -28,7 +28,7 @@ This repository manages six interconnected websites targeting $475K annual reven
 - **Voice**: Technical hacker perspective, anti-surveillance, solution-focused
 - **Technology**: Hugo static site generator with Terminal theme (hacker aesthetic)
 - **Deployment**: Cloudflare Pages
-- **Revenue Target**: $150K+ Year 1
+- **Revenue Target**: $3K+ Year 1
 - **Content Schedule**: 2 posts/week (Tuesday: Technical tutorials, Friday: Countermeasures)
 - **Monetization**:
   - Tech affiliate sales (System76, GPUs, VPNs, privacy hardware)
@@ -42,7 +42,7 @@ This repository manages six interconnected websites targeting $475K annual reven
 - **Voice**: Revolutionary, philosophical, movement-building focus
 - **Technology**: Hugo static site generator with Terminal theme
 - **Deployment**: Cloudflare Pages
-- **Revenue Target**: $100K+ Year 1
+- **Revenue Target**: $3.5K+ Year 1
 - **Content Schedule**: 2 posts/week (Monday: Analysis, Thursday: Action/Resistance)
 - **Monetization**:
   - Speaking engagements ($5K-$25K per event)
@@ -63,7 +63,16 @@ This repository manages six interconnected websites targeting $475K annual reven
 - **Content Schedule**: 1 post/month (project showcases, before/after galleries)
 - **Revenue Model**: Local handyman services and referrals
 
-### 5. Open Source Apocalypse
+### 5. Radiant Gardens
+- **URL**: `radiantgardens.co`
+- **Mission**: Professional garden design and installation business
+- **Purpose**: Local business presence, portfolio showcase, service offerings
+- **Technology**: Static HTML/CSS/JS site
+- **Deployment**: Cloudflare Pages
+- **Content Schedule**: Portfolio updates, client testimonials, service packages
+- **Revenue Model**: Local garden design and installation services
+
+### 6. Open Source Apocalypse
 - **URL**: `opensource-apocalypse.com` (existing site)
 - **Mission**: Maker/DIY projects with cyberpunk aesthetic
 - **Purpose**: Technical credibility, maker community engagement
@@ -72,7 +81,7 @@ This repository manages six interconnected websites targeting $475K annual reven
 - **Content Schedule**: Variable (build projects, open source tools)
 - **Monetization**: Product affiliates, Patreon support
 
-### 6. Winkky Farms
+### 7. Winkky Farms
 - **URL**: `winkkyfarms.com`
 - **Mission**: Personal farm blog documenting sustainable living journey
 - **Purpose**: Personal brand authenticity, community building
@@ -85,13 +94,19 @@ This repository manages six interconnected websites targeting $475K annual reven
 
 ## Technical Infrastructure
 
-### Hugo Configuration
+### Hugo Configuration (for Hugo sites)
 - **Version**: 0.147.9+ required
 - **Build Command**: `hugo --gc --minify`
 - **Output Directory**: `public`
 - **Themes**:
   - Terminal: Hacker aesthetic (AI-Independence, AI-Sovereignty, Open Source Apocalypse)
   - Ananke: Clean/accessible (The Independent Home, Radiant Home Solutions, Winkky Farms)
+
+### Static HTML Sites (radiant-gardens)
+- **Technology**: HTML5, CSS3, JavaScript
+- **Build Command**: No build required (direct deployment)
+- **Output Directory**: Root directory
+- **Development**: Live-server, Python HTTP server, or VS Code Live Server extension
 
 ### Cloudflare Pages Benefits
 - **Unlimited bandwidth** (no overage charges)
@@ -105,17 +120,21 @@ This repository manages six interconnected websites targeting $475K annual reven
 
 ### Development Workflow
 ```bash
-# Local development
-cd [site-directory]
+# Hugo sites - Local development
+cd [hugo-site-directory]
 hugo server -D
 
-# Create new post (interactive script)
+# Static sites - Local development
+cd [static-site-directory]
+python -m http.server 8000  # or npx live-server
+
+# Create new post (Hugo sites only)
 ./new-post.sh
 
 # Update all sites
 ./update-sites.sh
 
-# Production build
+# Production build (Hugo sites)
 hugo --gc --minify
 ```
 
@@ -148,21 +167,22 @@ hugo --gc --minify
 ---
 
 ## Success Metrics (6-Month Targets)
-- **Combined Traffic**: 50,000 visitors/month
-- **Email Subscribers**: 5,000 total
-- **Monthly Revenue**: $25,000
-- **Digital Product Sales**: 200+ units/month
-- **Consulting Clients**: 10-20 active
+- **Combined Traffic**: 5,000 visitors/month
+- **Email Subscribers**: 500 total
+- **Monthly Revenue**: $1,000
+- **Digital Product Sales**: 20+ units/month
+- **Consulting Clients**: 2-5 active
 
 ---
 
 ## Strategic Advantages
 1. **Multi-Site Synergy**: Cross-promotion between related audiences
-2. **Theme Consistency**: Terminal for tech/resistance, Ananke for practical/business
-3. **Cloudflare Infrastructure**: Enterprise-grade hosting at zero cost
-4. **Git-Based Workflow**: Version control and automated deployments
-5. **No CMS Dependencies**: Direct file editing for maximum control
-6. **Scalable Architecture**: Can handle viral traffic without cost concerns
+2. **Multi-Technology Flexibility**: Hugo for content sites, static HTML for business sites
+3. **Centralized Knowledge Base**: Research, planning, and documentation in one place
+4. **Cloudflare Infrastructure**: Enterprise-grade hosting at zero cost
+5. **Git-Based Workflow**: Version control and automated deployments
+6. **No CMS Dependencies**: Direct file editing for maximum control
+7. **Scalable Architecture**: Can handle viral traffic without cost concerns
 
 ---
 
