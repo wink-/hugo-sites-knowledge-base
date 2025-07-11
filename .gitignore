@@ -16,11 +16,30 @@ Thumbs.db
 # Hugo cache
 .hugo_build.lock
 
-# Node.js dependencies
+# Development and build artifacts
+logs/
+*.log
+*.tmp
+*.cache
+.cache/
+
+# Environment and configuration files
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+config.local.*
+
+# Node.js (for static site development)
 node_modules/
 package.json
 package-lock.json
 yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Downloaded binaries and archives
 *.tar.gz
@@ -36,18 +55,40 @@ test-*.js
 screenshot*.js
 *.py
 
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Python (for static site development)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-# Environment files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Temporary files created by scripts
+*.pid
+*.lock
+
+# Backup files
+*.bak
+*.backup
+
+# IDE and editor specific
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 
 # Note: Site directories are managed as git submodules
 # No need to ignore them - git handles submodules automatically
+
+# Local development directories (created by setup.sh)
+scripts/local/
+temp/
