@@ -16,5 +16,38 @@ Thumbs.db
 # Hugo cache
 .hugo_build.lock
 
+# Node.js dependencies
+node_modules/
+package.json
+package-lock.json
+yarn.lock
+
+# Downloaded binaries and archives
+*.tar.gz
+*.zip
+*.deb
+*.rpm
+hugo_*
+
+# Temporary analysis and test files
+*-screenshots/
+analyze-*.js
+test-*.js
+screenshot*.js
+*.py
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
 # Note: Site directories are managed as git submodules
 # No need to ignore them - git handles submodules automatically
