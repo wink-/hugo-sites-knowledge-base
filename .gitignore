@@ -27,13 +27,33 @@ logs/
 .env
 .env.local
 .env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
 config.local.*
 
 # Node.js (for static site development)
 node_modules/
+package.json
+package-lock.json
+yarn.lock
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Downloaded binaries and archives
+*.tar.gz
+*.zip
+*.deb
+*.rpm
+hugo_*
+
+# Temporary analysis and test files
+*-screenshots/
+analyze-*.js
+test-*.js
+screenshot*.js
+*.py
 
 # Python (for static site development)
 __pycache__/
@@ -50,32 +70,25 @@ venv.bak/
 # Temporary files created by scripts
 *.pid
 *.lock
-.hugo_build.lock
 
 # Backup files
 *.bak
 *.backup
-*~
 
 # IDE and editor specific
-.vscode/
-.idea/
 *.sublime-project
 *.sublime-workspace
 
 # OS generated files
-.DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-Thumbs.db
 
 # Note: Site directories are managed as git submodules
 # No need to ignore them - git handles submodules automatically
 
 # Local development directories (created by setup.sh)
 scripts/local/
-logs/
 temp/
