@@ -142,7 +142,13 @@
       "Bash(mysqldump:*--no-data*)",
       "Bash(mysqldump:*--single-transaction*)",
       "Bash(mysqlshow:*)",
-      "Bash(touch:*)"
+      "Bash(touch:*)",
+      "WebFetch(domain:github.com)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_close"
     ],
     "deny": []
   }

@@ -19,8 +19,8 @@ This is a multi-site content management system for seven interconnected websites
 ### See SITES.md for more detailed information on each site.
 
 ### Content Revenue Sites  
-- **ai-independence** (`ai-independence.com`): (Hugo Site Terminal Theme - Hacker Aesthetic) Technical privacy/surveillance resistance - $3000/year target 
-- **ai-sovereignty** (`ai-sovereignty.com`): (Hugo Site Terminal Theme - Hacker Aesthetic) Political resistance to AI control - $3500/year target
+- **ai-independence** (`ai-independence.com`): (Hugo Site - Terminal Theme - Hacker Aesthetic) Technical privacy/surveillance resistance - $3000/year target 
+- **ai-sovereignty** (`ai-sovereignty.com`): (Hugo Site - Terminal Theme - Hacker Aesthetic) Political resistance to AI control - $3500/year target
 - **the-independent-home** (`theindependenthome.com`): (Hugo Site - ananke theme ) Practical independence guides - $5500/year target
 
 ### Business Sites
@@ -29,7 +29,7 @@ This is a multi-site content management system for seven interconnected websites
 
 ### Hobby Sites
 - **open-source-apocalypse**: (`opensourceapocalypse.com`): (Hugo Site) Maker/DIY projects with cyberpunk aesthetic (terminal theme)
-- **winkky-farms**: Personal farm blog for authenticity (ananke theme)
+- **winkky-farms**: (`winkkyfarms.com`): (Hugo Site - custom theme) Personal farm blog for authenticity (ananke theme)
 
 ## Development Workflow
 
